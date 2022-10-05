@@ -20,7 +20,7 @@ export const Container = styled.footer`
 
         h1 {
             font-weight: 700;
-            font-size: 25.1109px;
+            font-size: 25px;
             color: rgba(255, 255, 255, 0.3)};
     }
 

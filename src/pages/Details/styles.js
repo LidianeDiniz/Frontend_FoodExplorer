@@ -24,7 +24,7 @@ export const Container = styled.div`
             }
 
             svg {
-                font-size: 122px;
+                font-size: 220px;
                 color: ${({ theme   }) => theme.COLORS.WHITE};
             }
 

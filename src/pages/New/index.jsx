@@ -16,6 +16,7 @@ export function New() {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
+  const [category, setCategory] = useState("");
   const [imageFile, setImageFile] = useState(null);
 
   const navigate = useNavigate();
@@ -42,13 +43,14 @@ export function New() {
       alert("Favor preecha todos os campos!");
     }
 
-    if (ingredients.length < 2) {
-      alert("Favor adicionar no minimo 2 ingredientes!");
+    if (ingredients.length < 1) {
+      alert("Adicione no minimo 1 ingredientes!");
     } else {
       const formData = new FormData();
       formData.append("image", imageFile);
       formData.append("title", title);
       formData.append("description", description);
+      formData.append("category", category);
       formData.append("price", price);
 
       for (let i = 0; i < ingredients.length; i += 1) {
@@ -113,15 +115,20 @@ export function New() {
               </ImgPlate>
             </div>
 
-            <div className="flex">
-              <label htmlFor="event-name">Nome</label>
-              <Input
-                id="event-name"
-                type="text"
-                placeholder="Ex.: Salada Caesar"
-                onChange={(e) => setTitle(e.target.value)}
+            <Input 
+                label="name" 
+                title="Nome do prato" 
+                type="text" 
+                placeholder="Ex.: Salada Ceasar"
+                onChange={e => setTitle(e.target.value)}
               />
-            </div>
+              <Input
+                label="category"
+                title="Categoria"
+                type="text"
+                placeholder="Pratos principais "
+                onChange={e => setCategory(e.target.value)}
+              />
           </InputWrapper>
 
           <InputWrapper>

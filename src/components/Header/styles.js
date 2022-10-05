@@ -14,7 +14,9 @@ export const Container = styled.div`
     grid-area: header;
 
    
-
+    >input{
+        width: 300px;
+    }
     > .logo {
         display: flex;
         align-items: center;

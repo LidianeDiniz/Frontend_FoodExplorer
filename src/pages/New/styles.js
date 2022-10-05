@@ -111,7 +111,7 @@ export const InputWrapper = styled.div`
 export const ImgPlate = styled.div`
 
   position: relative;
-  width: 229px;  
+  width: 300px;  
 
   input {
     display: none;

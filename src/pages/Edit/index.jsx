@@ -27,11 +27,11 @@ export function Edit() {
     async function fetchPlate() {
       const response = await api.get(`/plates/${params.id}`);
 
-      const { title, description, price, ingredient } = response.data;
+      const { title, description, price, ingredients } = response.data;
       setTitle(title);
       setDescription(description);
       setPrice(price);
-      setIngredients(ingredient.map(item => item.name));
+      setIngredients(ingredients.map(item => item.name));
     }
 
     fetchPlate();

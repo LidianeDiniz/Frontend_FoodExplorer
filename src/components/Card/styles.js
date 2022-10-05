@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Container = styled.div `
     width: 300px;
     height: 512px;
+    padding:56px, 40px, 40px, 40px;
+  
+    
 
     background: rgba(0, 0, 0, 0.32);
     border: 1px solid rgba(0, 0, 0, 0.65);
@@ -17,14 +20,22 @@ export const Container = styled.div `
     > img {
         width: 176px;
         height: 176px;
+      
         border-radius: 50%;
+        transform: scale(0.9);
+        transition: all ease 0.2s;
+        cursor: pointer;
+    }
+
+    > img:hover{
+        transform: scale(1);
     }
 
     > button {
         border: none;
         background: transparent;
-        margin-top: 18px;
-        margin-bottom: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
 
         h3 {
             color: ${({theme}) => theme.COLORS.WHITE};

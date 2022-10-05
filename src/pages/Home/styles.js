@@ -1,16 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 100%;
-  margin-inline: auto;
-   
+   width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "content"
+    "footer"; 
 `;
 
 export const Content = styled.div`
-    max-width: 136.8rem;
-    display: block;
-     margin-top: 150px;
-
+     
+     grid-area: content;
+    padding: 164px 124px 100px 124px;
+ 
+ 
     > div {
         display: flex;
         align-items: center;
@@ -21,7 +26,9 @@ export const Content = styled.div`
         height: 260px;
         position: relative;
 
-        div {
+        
+
+    div {
             margin-right: 47px;
         }
 
@@ -34,9 +41,11 @@ export const Content = styled.div`
 
     }
 
+
+      
     @media (max-width: 1100px) {
         width: 100%;
-        padding: 64px;
+        padding: 104px;
         margin: auto;
 
         > div {
@@ -63,7 +72,7 @@ export const Content = styled.div`
             text-align: center;
 
             img {
-            display: none;
+                display: none;
             }
         }
     }
