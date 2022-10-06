@@ -135,7 +135,7 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 
 
 ## 💻  **Project** 
-Uma pagina digital para o restaurante foodExplorer como menu funcional.
+Uma pagina digital para o restaurante foodExplorer com menu funcional.
 
 ---
 ## 🦸 Author
