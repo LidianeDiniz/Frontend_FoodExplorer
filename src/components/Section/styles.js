@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
  padding-inline: 140px;
   margin-bottom: 140px;
- 
+  width: 1100px;
   
   transition: all ease 0.5s;
 
@@ -15,12 +15,15 @@ export const Container = styled.section`
       line-height: 200%;
         }
   
-      
+        @media (min-width: 768px) {
+    padding-inline: 0;
+  }
  
 `
 export const Slider = styled.div`
   position: relative;
   width: 1100px;
+  
   
   
 
@@ -30,6 +33,8 @@ export const Slider = styled.div`
     display: flex;
     gap: 27px;
 
+   
+ 
    
   }
 

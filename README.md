@@ -18,10 +18,10 @@
 
 </p>
 
-## 💻 About
+## 💻 Sobre:
 
-The application that we will develop is a digital menu for a fictional restaurant, known as foodExplorer.
-In this challenge, the following topics were addressed:
+O aplicativo que desenvolveremos é um cardápio digital para um restaurante fictício, conhecido como foodExplorer.
+Neste desafio foram abordados os seguintes temas:
 
 - React;
 - Routes;
@@ -111,13 +111,13 @@ $ https://github.com/LidianeDiniz/Frontend_foodExplorer.git
 $ cd + sua pasta + git clone https://github.com/LidianeDiniz/Frontend_foodExplorer.git
 
 
-# Install the dependencies
+# Instale as dependências com:
 $ npm install
 
-# Run the application in development mode
+# Rode a aplicação em modo de desenvolvimento:
 $ npm run dev
 
-# The application will open on the port: 3000 - go to http://localhost:3000
+# O servidor inciará na porta:3333 - acesse <   http://127.0.0.1:5173/ >
 ```
 ---
 
@@ -134,11 +134,16 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ---
 
 
-## 💻  **Project** 
-Uma pagina digital para o restaurante foodExplorer com menu funcional.
+## 💻 Sobre:
+
+O aplicativo que desenvolveremos é um cardápio digital para um restaurante fictício, conhecido como foodExplorer.
+Neste desafio foram abordados os seguintes temas:
+
+
 
 ---
-## 🦸 Author
+## Deploy do projeto.
+https://food-explorer-lidiane-diniz.netlify.app/
 
 
 ---

@@ -3,13 +3,13 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { useState } from 'react';
 
 export function Section({title, children, items }) {
-  const [ scrollX, setScrollX] = useState(20)
+  const [ scrollX, setScrollX] = useState(30)
  
 
 
   function handleLeftArrow(e) {
     e.preventDefault();
-    let x = scrollX + 50;
+    let x = scrollX + 150;
     if (x > 0){
       x = 0;
     }
@@ -19,11 +19,11 @@ export function Section({title, children, items }) {
 
   function handleRightArrow(e) {
     e.preventDefault();
-    let x = scrollX - 50;
+    let x = scrollX - 150;
     let listW = children.length *450;
     if((window.innerWidth - listW) > x){
 
-      x= (window.innerWidth - listW) - 60;
+      x= (window.innerWidth - listW) - 15;
     }
     setScrollX(x)
     
@@ -41,7 +41,7 @@ export function Section({title, children, items }) {
           <FiChevronLeft size={50}/>
         </button>
         <div style={{marginLeft: scrollX,
-        width:children.length *15}}>
+        width:children.length *150}}>
     {children}
   </div>
 
