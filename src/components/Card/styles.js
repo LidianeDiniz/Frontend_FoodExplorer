@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div `
     width: 300px;
     height: 512px;
-    padding:56px, 40px, 40px, 40px;
+   
   
     
 
@@ -18,9 +18,9 @@ export const Container = styled.div `
     position: relative;
 
     > img {
-        width: 176px;
-        height: 176px;
-      
+        width: 245px;
+        height: 245px;
+        opacity: 89%;
         border-radius: 50%;
         transform: scale(0.9);
         transition: all ease 0.2s;
@@ -62,7 +62,7 @@ export const Container = styled.div `
     > div {
         display: flex;
         align-items: center;
-        gap: 18px;
+        gap: 16px;
         
 
         span {
