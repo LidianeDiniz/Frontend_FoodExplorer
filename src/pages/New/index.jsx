@@ -122,7 +122,7 @@ export function New() {
                 placeholder="Ex.: Salada Ceasar"
                 onChange={e => setTitle(e.target.value)}
               />
-              <Input
+              <Input className="category"
                 label="category"
                 title="Categoria"
                 type="text"

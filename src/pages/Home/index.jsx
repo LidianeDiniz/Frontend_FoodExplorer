@@ -45,9 +45,9 @@ export function Home() {
         </FrontCover> 
        
       {
-        plates.filter(plate => plate.category == "Pratos principais").length > 0 &&
+        plates.filter(plate => plate.category == "pratos principais").length > 0 &&
         <Section  title ="Pratos Principais">
-         {plates.filter(plates=> plates.category == "Pratos principais").map((item, index) =>(
+         {plates.filter(plates=> plates.category == "pratos principais").map((item, index) =>(
           <Card key={String(index)} data={item} 
           />
           ))
@@ -56,12 +56,12 @@ export function Home() {
         } 
 
           {
-            plates.filter(plate => plate.category == "Sobremesas").length > 0 &&
+            plates.filter(plate => plate.category == "sobremesas").length > 0 &&
             <Section title ="Sobremesas">
             
             {
            
-            plates.filter(plates=> plates.category == "Sobremesas").map((item, index) =>(
+            plates.filter(plates=> plates.category == "sobremesas").map((item, index) =>(
               <Card key={String(index)} data={item} 
               />
               ))
@@ -72,12 +72,12 @@ export function Home() {
           
           {
           
-            plates.filter(plate => plate.category == "Bebidas").length > 0 &&
+            plates.filter(plate => plate.category == "bebidas").length > 0 &&
             <Section title ="Bebidas">
               
            
               
-            {plates.filter(plates=> plates.category == "Bebidas").map((item, index) =>(
+            {plates.filter(plates=> plates.category == "bebidas").map((item, index) =>(
               <Card key={String(index)} data={item} />))}
               
    

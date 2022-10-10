@@ -91,11 +91,16 @@ export const InputWrapper = styled.div`
     flex: 80%;
   }
 
+
   .textarea {
     flex: 100%;
   }
 
-
+.category{
+  text-transform: lowercase;
+}
+ 
+ 
   label, span {
     display: inline-block;
     margin-top: 32px;

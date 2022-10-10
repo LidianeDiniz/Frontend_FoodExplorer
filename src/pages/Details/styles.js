@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 50%;
+    width: 100%;
     height: 80vh;
     
    
   
     > main {
+      
 
         > div {
             .backToPage {
@@ -39,11 +40,10 @@ export const Container = styled.div`
 `;
 
         export const Content = styled.div`
-        padding: 60px 122px;
-        display: flex;
-       
-        gap: 41px;
-        grid-area: content;
+         display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px 123px;
         
         
         

@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
- padding-inline: 140px;
-  margin-bottom: 140px;
-  width: 1100px;
+
+  
+  width: 100%;
+  margin-left: 25%;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  position: relative;
   
   transition: all ease 0.5s;
 
@@ -15,7 +20,7 @@ export const Container = styled.section`
       line-height: 200%;
         }
   
-        @media (min-width: 768px) {
+    @media (min-width: 768px) {
     padding-inline: 0;
   }
  

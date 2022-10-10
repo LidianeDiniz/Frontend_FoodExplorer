@@ -67,8 +67,8 @@ export const Container = styled.div`
         }
     }
 
-    @media(max-width: 900px) {
-        width: 150%;
+    @media(max-width: 600px) {
+        width: 100%;
         padding: 0 20px;
         display: flex;
         align-items: center;
