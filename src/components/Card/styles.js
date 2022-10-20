@@ -1,20 +1,21 @@
 import styled from "styled-components";
 
 export const Container = styled.div `
-    width: 300px;
+    width: 100%;
     height: 512px;
    
-  
     
 
     background: rgba(0, 0, 0, 0.32);
     border: 1px solid rgba(0, 0, 0, 0.65);
     border-radius: 8px;
-
+   
+    padding-inline: 10% ;
+    margin-inline: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-left: 27px;
+   
     position: relative;
 
     > img {
@@ -25,6 +26,8 @@ export const Container = styled.div `
         transform: scale(0.9);
         transition: all ease 0.2s;
         cursor: pointer;
+        align-items: center;
+        
     }
 
     > img:hover{
@@ -32,37 +35,56 @@ export const Container = styled.div `
     }
 
     > button {
+        width: 100%;
+        height: 81px;
         border: none;
         background: transparent;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        display: flex;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        gap: 1.4rem;
+        border-bottom: 36px;
+       
 
         h3 {
             color: ${({theme}) => theme.COLORS.WHITE};
             font-weight: 700;
             font-size: 24px;
+            margin-bottom: 4px;
+           
         } 
     }
 
     > p {
+
+            width: 220px;
+            height: 44px;
             font-weight: 400;
             font-size: 14px;
             text-align: center;
+            justify-content: center;
             color: ${({theme}) => theme.COLORS.GRAY_200};
-            margin-bottom: 16px;
+            
     }
 
     > strong {
+        width: 220px;
+        height: 51px;
+        margin-top: 16px;
+
         font-weight: 400;
         font-size: 32px;
         color: ${({theme}) => theme.COLORS.BLUE};
-        margin-bottom: 18px;
+       
+        
     }
 
     > div {
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 4px;
+        margin-bottom: 36px;
         
 
         span {

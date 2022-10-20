@@ -4,7 +4,7 @@ export const Container = styled.section`
 
   
   width: 100%;
-  margin-left: 120git addpx;
+  margin-left: 30px;
   display: flex;
   justify-items: center;
   flex-direction: column;
@@ -27,7 +27,7 @@ export const Container = styled.section`
 `
 export const Slider = styled.div`
   position: relative;
-  width: 1100px;
+ 
   
   
   

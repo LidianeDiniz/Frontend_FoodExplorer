@@ -11,7 +11,7 @@ export const Container = styled.div`
 `;
 
 export const FrontCover  = styled.div`
-  margin-top: 164px;
+  margin-top: 64px;
   margin-inline: auto;
  
 
@@ -22,7 +22,8 @@ export const FrontCover  = styled.div`
 
 export const Content = styled.div`
     grid-area: content;
-    padding: 64px 24px 10px 14px;
+    padding: 164px 124px 100px 124px;
+   
    
 
        
@@ -39,6 +40,7 @@ export const Content = styled.div`
 
         div {
             margin-right: 47px;
+            
         }
 
        
@@ -46,15 +48,22 @@ export const Content = styled.div`
         img {
             position: absolute;
             bottom: 0;
-            left: 0px;
+            left:0px;
             display: inline-block;
+
+        @media (max-width: 700px) {
+        width: 100%;
+           
+        max-width: 40%;
+            
         }
+    }
 
     }
 
     @media (max-width: 1100px) {
         width: 100%;
-        padding: 64px;
+        
         margin: auto;
 
         > div {
