@@ -104,7 +104,8 @@ export const Container = styled.div `
         border: none;
         position: absolute;
         top: 0;
-        right: 20px;
+        margin-left: 100px;
+        
     }
 
     >.edit-plate {
@@ -112,8 +113,10 @@ export const Container = styled.div `
         color: ${({theme}) => theme.COLORS.WHITE};
         background: transparent;
         border: none;
-        position: absolute;
-        top: 0;
-        left: 20px;
+        padding-right: 250px;
+        position: relative;
+        top: 25px;
+       
+        
     }
 `;
