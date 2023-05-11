@@ -26,6 +26,7 @@ function AuthProvider({ children }) {
         catch (error) {
             if(error.response) {
                 alert(error.response.data.message);
+                console.log(error)
             } else {
                 alert("Não foi possível entrar.");
             }
